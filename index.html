@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>smlrods</title>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SMLRODS - Personal Website of SMLRODS. Explore my GitHub repository and more.">
+    <title>SMLRODS</title>
     <link href="css/style.css" rel="stylesheet">
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-      body {
-        display: flex;
-        flex-direction: column;
-        place-content: center;
-        place-items: center;
-        height: 100vh;
-        max-height: 100vh;
-        text-align: center;
-      }
+        body {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            place-items: center;
+            height: 100vh;
+            max-height: 100vh;
+            text-align: center;
+        }
 
-      h1 {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid black; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em; /* Adjust as needed */
-        max-width: min-content;
-        animation: 
-          typing 5s steps(80, end),
-          blink-caret .75s step-end infinite;
-      }
+        h1 {
+            overflow: hidden;
+            border-right: .15em solid black;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            max-width: min-content;
+            animation:
+                typing 5s steps(80, end),
+                blink-caret .75s step-end infinite;
+        }
 
-      /* The typing effect */
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
 
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: black; }
-      }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: black; }
+        }
 
-      body > div {
-        width: 100%;
-        user-select: none;
-      }
+        body > div {
+            width: 100%;
+            user-select: none;
+        }
 
-      a,
-      a:visited {
-        color: black;
-      }
+        a,
+        a:visited {
+            color: black;
+        }
 
-      img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin-bottom: 20px;
-      }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div>
-      <img src="https://avatars.githubusercontent.com/u/84884629?v=4" alt="github avatar">
-      <h1>SMLRODS</h1>
-      <a href="https://github.com/smlrods" target="_blank">Github</a>
+        <img src="https://avatars.githubusercontent.com/u/84884629?v=4" alt="SMLRODS - GitHub Avatar">
+        <h1>SMLRODS</h1>
+        <a href="https://github.com/smlrods" target="_blank" title="Explore my GitHub repository">GitHub</a>
     </div>
+</body>
 </html>
