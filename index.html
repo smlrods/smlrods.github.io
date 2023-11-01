@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="SMLRODS - Personal Website of SMLRODS. Explore my GitHub repository and more.">
     <title>SMLRODS</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/84884629?v=4">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
     <style>
         * {
             padding: 0;
@@ -21,6 +28,8 @@
             height: 100vh;
             max-height: 100vh;
             text-align: center;
+            background-color: black;
+            color: white;
         }
 
         h1 {
@@ -30,19 +39,8 @@
             margin: 0 auto;
             letter-spacing: .15em;
             max-width: min-content;
-            animation:
-                typing 5s steps(80, end),
-                blink-caret .75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: black; }
+            font-size: 50px;
+            font-family: 'Permanent Marker', cursive;
         }
 
         body > div {
@@ -52,7 +50,8 @@
 
         a,
         a:visited {
-            color: black;
+            color: white;
+            text-decoration: none;
         }
 
         img {
@@ -65,9 +64,19 @@
 </head>
 <body>
     <div>
-        <img src="https://avatars.githubusercontent.com/u/84884629?v=4" alt="SMLRODS - GitHub Avatar">
-        <h1>SMLRODS</h1>
-        <a href="https://github.com/smlrods" target="_blank" title="Explore my GitHub repository">GitHub</a>
+        <h1 class="glitch">SMLRODS</h1>
+        <a href="https://github.com/smlrods" target="_blank" title="Explore my GitHub repository">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://x.com/smlrods" target="_blank" title="X">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@smlrods" target="_blank" title="X">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
     </div>
+    <script>
+        PowerGlitch.glitch('.glitch');
+    </script>
 </body>
 </html>
